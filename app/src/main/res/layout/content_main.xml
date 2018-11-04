@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:visibility="visible"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/ma_btnLinearLayoutActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_linear_layout"
+            />
+
+        <Button
+            android:id="@+id/ma_btnTableLayoutActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_table_layout"
+            />
+
+
+        <Button
+            android:id="@+id/ma_btnGridLayoutActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_grid_layout"
+            />
+
+
+        <Button
+            android:id="@+id/ma_btnDynamicLayoutActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_dynamic_layout"
+            />
+
+
+
+        <Button
+            android:id="@+id/ma_btnSendIntent1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Intent1"
+            />
+
+
+        <Button
+            android:id="@+id/ma_btnSendIntent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Intent2"
+            />
+
+
+        <Button
+            android:id="@+id/ma_btnSendIntent3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Intent3"
+            />
+
+
+        <Button
+            android:id="@+id/ma_btnSendMultipleIntents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Multiple Intents(Does not work)"
+            />
+
+        <Button
+            android:id="@+id/ma_btnAlarmActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alarm Activity"
+            />
+
+        <Button
+            android:id="@+id/ma_btnReceiverWorkerActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ReceiverWorkerActivity"
+            />
+
+        <Button
+            android:id="@+id/ma_btnTodoActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TodoActivity"
+            />
+
+        <Button
+            android:id="@+id/ma_btnFragmentActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FragmentActivity"
+            />
+
+
+        <Button
+            android:id="@+id/ma_btnWorkerFormtActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WorkerFormActivity(Fragment)"
+            />
+
+
+        <Button
+            android:id="@+id/ma_btnCustomListActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CustomListActivity(Fragment)"
+            />
+
+
+        <Button
+            android:id="@+id/ma_btnPlanetListActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PlanetListActivity(Fragment)"
+            />
+
+        <Button
+            android:id="@+id/ma_btnIntentExampleActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IntentExampleActivity"
+            />
+
+        <Button
+            android:id="@+id/ma_btnUIControlsActvity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UIControlsActivity"
+            />
+    </LinearLayout>
+</ScrollView>

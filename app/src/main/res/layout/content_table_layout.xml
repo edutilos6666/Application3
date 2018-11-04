@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TableLayoutActivity"
+    tools:showIn="@layout/activity_table_layout">
+    <TableRow>
+        <TextView
+            android:id="@+id/tla_lblTitle"
+            android:text="TableLayoutActivity"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/tla_lblId"
+            android:text="@string/lblId"
+            />
+        <EditText
+            android:id="@+id/tla_editId"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="number"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tla_lblName"
+            android:text="@string/lblName"
+            />
+        <EditText
+            android:id="@+id/tla_editName"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="textPersonName"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tla_lblPassword"
+            android:text="@string/lblName"
+            />
+        <EditText
+            android:id="@+id/tla_editPassword"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="textPassword"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tla_lblAge"
+            android:text="@string/lblAge"
+            />
+        <EditText
+            android:id="@+id/tla_editAge"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="number"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tla_lblWage"
+            android:text="@string/lblWage"
+            />
+        <EditText
+            android:id="@+id/tla_editWage"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="numberDecimal"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/tla_lblActive"
+            android:text="@string/lblActive"
+            />
+        <EditText
+            android:id="@+id/tla_editActive"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="text"
+            />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/tla_btnMainActivity"
+            android:text="MainActivity"
+            />
+
+        <Button
+            android:id="@+id/tla_btnSendIntent1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Intent1"
+            />
+    </TableRow>
+
+</TableLayout>

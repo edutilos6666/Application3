@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".UIContolsActivity"
+    tools:showIn="@layout/activity_uicontols"
+    android:visibility="visible"
+    >
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      >
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="TextView"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Hello World"
+              />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="EditText"
+              />
+          <EditText
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="AutoCompleteTextView"
+              />
+          <AutoCompleteTextView
+              android:id="@+id/uica_textViewAutoComplete"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Button"
+              />
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Simple Button"
+              />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="ImageButton"
+              />
+          <ImageButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@android:drawable/alert_dark_frame"
+              />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="CheckBox"/>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              >
+              <CheckBox
+                  android:id="@+id/uica_cbListening"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:checked="true"
+                  android:text="Listening"
+                  />
+              <CheckBox
+                  android:id="@+id/uica_cbSpeaking"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:checked="true"
+                  android:text="Speaking"
+                  />
+          </LinearLayout>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="ToggleButton"
+              />
+          <ToggleButton
+              android:id="@+id/uica_tbWriting"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:checked="true"
+              android:text="Writing"
+              />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="RadioGroup and RadioButton"
+              />
+          <RadioGroup
+              android:id="@+id/uica_rgGender"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              >
+              <RadioButton
+                  android:id="@+id/uica_rbMale"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Male"
+                  />
+              <RadioButton
+                  android:id="@+id/uica_rbFemale"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Female"
+                  />
+              <RadioButton
+                  android:id="@+id/uica_rbChild"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Child"
+                  />
+          </RadioGroup>
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="ProgressBar"
+              />
+          <ProgressBar
+              android:id="@+id/uica_progressBar"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:min="0"
+              android:max="100"
+              android:progress="10"
+              />
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              >
+              <Button
+                  android:id="@+id/uica_btnStartProgress"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Start Progress"
+                  />
+              <Button
+                  android:id="@+id/uica_btnStopProgress"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Stop Progress"
+                  />
+          </LinearLayout>
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Spinner"
+              />
+          <Spinner
+              android:id="@+id/uica_spinner"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:entries="@array/SpinnerValues"
+              />
+
+          <Spinner
+              android:id="@+id/uica_spinner2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"></Spinner>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="DatePicker and TimePicker"
+              />
+          <DatePicker
+              android:id="@+id/uica_datePicker"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          <TimePicker
+              android:id="@+id/uica_timePicker"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+
+
+  </LinearLayout>
+</ScrollView>

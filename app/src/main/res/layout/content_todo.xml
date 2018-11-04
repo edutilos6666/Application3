@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TodoActivity"
+    tools:showIn="@layout/activity_todo">
+
+
+
+    <TableRow>
+        <Button
+            android:id="@+id/todo_btnInsert"
+            android:text="insert new todo"
+            />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/todo_btnFindAll"
+            android:text="find All Todos"
+            />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/todo_btnUpdate"
+            android:text="Update"
+            />
+        <EditText
+            android:id="@+id/todo_editUpdate"
+            android:hint="id for update"
+            android:inputType="number"
+            />
+    </TableRow>
+
+
+
+
+    <TableRow>
+        <Button
+            android:id="@+id/todo_btnDelete"
+            android:text="Delete"
+            />
+        <EditText
+            android:id="@+id/todo_editDelete"
+            android:hint="id for delete"
+            android:inputType="number"
+            />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/todo_btnDetails"
+            android:text="Details"
+            />
+        <EditText
+            android:id="@+id/todo_editDetails"
+            android:hint="id for details"
+            android:inputType="number"
+            />
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:id="@+id/todo_editFindAll"
+            android:inputType="textMultiLine"
+            android:ems="15"
+            />
+    </TableRow>
+
+    <TableLayout>
+        <Button
+            android:id="@+id/todo_btnMainActivity"
+            android:text="MainActivity"
+            />
+    </TableLayout>
+
+</TableLayout>

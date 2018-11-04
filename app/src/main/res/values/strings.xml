@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Application3</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_linear_layout">LinearLayoutActivity</string>
+    <string name="title_activity_table_layout">TableLayoutActivity</string>
+    <string name="lblId">Id</string>
+    <string name="lblName">Name</string>
+    <string name="lblPassword">Password</string>
+    <string name="lblAge">Age</string>
+    <string name="lblWage">Wage</string>
+    <string name="lblActive">Active</string>
+    <string name="btnSubmit">Submit</string>
+    <string name="btnClear">Clear</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnMainActivity">Main Activity</string>
+    <string name="lblLogMessage">Log Message</string>
+    <string name="title_activity_grid_layout">GridLayoutActivity</string>
+    <string name="title_activity_dynamic_layout">DynamicLayoutActivity</string>
+    <string name="title_activity_alarm">AlarmActivity</string>
+    <string name="title_activity_receiver_worker">ReceiverWorkerActivity</string>
+    <string name="title_activity_todo">TodoActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fragment">FragmentActivity</string>
+    <string name="title_activity_worker_form">WorkerFormActivity</string>
+
+    <string-array name="Planets">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+        <item>Plutos</item>
+    </string-array>
+    <string name="title_activity_custom_list">CustomListActivity</string>
+    <string name="title_activity_planet_list">PlanetListActivity</string>
+    <string name="title_activity_intent_example">IntentExampleActivity</string>
+    <string name="title_activity_uicontols">UIContolsActivity</string>
+
+    <string-array name="SpinnerValues">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+        <item>Plutos</item>
+    </string-array>
+</resources>

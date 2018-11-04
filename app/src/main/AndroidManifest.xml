@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edutilos">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LinearLayoutActivity"
+            android:label="@string/title_activity_linear_layout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TableLayoutActivity"
+            android:label="@string/title_activity_table_layout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GridLayoutActivity"
+            android:label="@string/title_activity_grid_layout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DynamicLayoutActivity"
+            android:label="@string/title_activity_dynamic_layout"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".service.CustomService1"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".broadcast.CustomReceiver2">
+
+            <!--
+                <intent-filter>
+                <action android:name="com.edutilos.CUSTOM_INTENT_2"></action>
+                <action android:name="com.edutilos.CUSTOM_INTENT_3"></action>
+            </intent-filter>
+            -->
+        </receiver>
+        <receiver
+            android:name=".broadcast.CustomReceiver1"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+                <action android:name="android.intent.action.APPLICATION_RESTRICTIONS_CHANGED" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.CAMERA_BUTTON" />
+                <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS" />
+                <action android:name="android.intent.action.CONFIGURATION_CHANGED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+                <action android:name="android.intent.action.DOCK_EVENT" />
+                <action android:name="android.intent.action.DREAMING_STARTED" />
+                <action android:name="android.intent.action.DREAMING_STOPPED" />
+                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE" />
+                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE" />
+                <action android:name="android.intent.action.GTALK_CONNECTED" />
+                <action android:name="android.intent.action.GTALK_DISCONNECTED" />
+                <action android:name="android.intent.action.HEADSET_PLUG" />
+                <action android:name="android.intent.action.INPUT_METHOD_CHANGED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MANAGE_PACKAGE_STORAGE" />
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.intent.action.MEDIA_CHECKING" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_NOFS" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED" />
+                <action android:name="android.intent.action.MEDIA_SCANNER_SCAN_FILE" />
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED" />
+                <action android:name="android.intent.action.MEDIA_SHARED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTABLE" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.MY_PACKAGE_SUSPENDED" />
+                <action android:name="android.intent.action.MY_PACKAGE_UNSUSPENDED" />
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+                <action android:name="android.intent.action.PACKAGE_DATA_CLEARED" />
+                <action android:name="android.intent.action.PACKAGE_FIRST_LAUNCH" />
+                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_INSTALL" />
+                <action android:name="android.intent.action.PACKAGE_NEEDS_VERIFICATION" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+                <action android:name="android.intent.action.PACKAGE_VERIFIED" />
+                <action android:name="android.intent.action.PACKAGES_SUSPENDED" />
+                <action android:name="android.intent.action.PACKAGES_UNSUSPENDED" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.PROVIDER_CHANGED" />
+                <action android:name="android.intent.action.REBOOT" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIME_TICK" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.UID_REMOVED" />
+                <action android:name="android.intent.action.UMS_CONNECTED" />
+                <action android:name="android.intent.action.UMS_DISCONNECTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.USER_UNLOCKED" />
+                <action android:name="android.intent.action.WALLPAPER_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadcast.ReceiverVibrator"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".AlarmActivity"
+            android:label="@string/title_activity_alarm"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".broadcast.ReceiverWorker"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ReceiverWorkerActivity"
+            android:label="@string/title_activity_receiver_worker"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <provider
+            android:name=".contentprovider.TodoProvider"
+            android:authorities="com.edutilos.model.todo"
+            android:exported="true" />
+
+        <activity
+            android:name=".TodoActivity"
+            android:label="@string/title_activity_todo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomFragmentActivity"
+            android:label="@string/title_activity_fragment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WorkerFormActivity"
+            android:label="@string/title_activity_worker_form"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomListActivity"
+            android:label="@string/title_activity_custom_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PlanetListActivity"
+            android:label="@string/title_activity_planet_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IntentExampleActivity"
+            android:label="@string/title_activity_intent_example"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UIContolsActivity"
+            android:label="@string/title_activity_uicontols"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
