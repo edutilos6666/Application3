@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CalculatorActivity"
+    tools:showIn="@layout/activity_calculator">
+
+    <TextView
+        android:id="@+id/calc_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Simple Calculator"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/calc_edit_display"
+        android:layout_width="343dp"
+        android:layout_height="133dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/back"
+        android:cursorVisible="false"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="49dp"
+        tools:paddingBottom="10dp"
+        tools:paddingLeft="10dp"
+        tools:paddingRight="10dp"
+        tools:paddingTop="10dp" />
+
+    <Button
+        android:id="@+id/calc_btn_1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="203dp"
+        android:text="1"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="203dp"
+        android:text="2"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_3"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="203dp"
+        android:text="3"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="235dp"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="203dp"
+        android:text="4"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_5"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="303dp"
+        android:layout_marginLeft="303dp"
+        android:layout_marginTop="203dp"
+        android:text="5"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+
+
+    <!-- second row -->
+
+    <Button
+        android:id="@+id/calc_btn_6"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="263dp"
+        android:text="6"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_7"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="263dp"
+        android:text="7"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_8"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="263dp"
+        android:text="8"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_9"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="235dp"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="263dp"
+        android:text="9"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_0"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="303dp"
+        android:layout_marginLeft="303dp"
+        android:layout_marginTop="263dp"
+        android:text="0"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+
+
+    <!-- third row -->
+    <Button
+        android:id="@+id/calc_btn_add"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="323dp"
+        android:text="+"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_subtract"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="323dp"
+        android:text="-"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_multiply"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="323dp"
+        android:text="*"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_divide"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="235dp"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="323dp"
+        android:text="/"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_modulo"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="303dp"
+        android:layout_marginLeft="303dp"
+        android:layout_marginTop="323dp"
+        android:text="%"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <!-- fourth row -->
+    <Button
+        android:id="@+id/calc_btn_sin"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="383dp"
+        android:text="sin"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_cos"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="383dp"
+        android:text="cos"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_tan"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="383dp"
+        android:text="tan"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_cot"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="235dp"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="383dp"
+        android:text="cot"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_eq"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="303dp"
+        android:layout_marginLeft="303dp"
+        android:layout_marginTop="383dp"
+        android:text="="
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/calc_btn_clear"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="443dp"
+        android:layout_marginLeft="10dp"
+        android:text="Clear" />
+
+
+</RelativeLayout>

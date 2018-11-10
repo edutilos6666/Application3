@@ -50,4 +50,7 @@
         <item>Neptune</item>
         <item>Plutos</item>
     </string-array>
+    <string name="title_activity_dn_dexample">DnDExampleActivity</string>
+    <string name="title_activity_calculator">CalculatorActivity</string>
+    <string name="title_activity_rest_example">RestExampleActivity</string>
 </resources>

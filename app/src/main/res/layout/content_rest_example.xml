@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".RestExampleActivity"
+    tools:showIn="@layout/activity_rest_example"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/rest_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rest Example"
+            />
+        <EditText
+            android:id="@+id/rest_edit_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:inputType="textMultiLine"
+            android:height="200dp"
+            android:ems="20"
+            android:scrollbars="vertical"
+            android:cursorVisible="false"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            />
+        <Button
+            android:id="@+id/rest_btn_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load Content"
+            />
+
+        <Button
+            android:id="@+id/rest_btn_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Worker"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/rest_btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Worker"
+                />
+            <EditText
+                android:id="@+id/rest_edit_update_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tooltipText="Enter id for update"
+                android:ems="10"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/rest_btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Worker"
+                />
+            <EditText
+                android:id="@+id/rest_edit_delete_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tooltipText="Enter id for delete"
+                android:ems="10"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/rest_btn_findOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find One Worker"
+                />
+            <EditText
+                android:id="@+id/rest_edit_findOne_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tooltipText="Enter id for search"
+                android:ems="10"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/rest_btn_getHttpbin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get httpbin"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -77,7 +77,8 @@ public class MainActivity extends AppCompatActivity {
          btnSendMultiplIntents, btnAlarmActivity, btnReceiverWorkerActivity,
          btnTodoActivity, btnFragmentActivity, btnWorkerFormtActivity,
          btnCustomListActivity, btnPlanetListActivity, btnIntentExampleActivity,
-         btnUIControlsActvity;
+         btnUIControlsActvity, btnDnDExampleActvity, btnCalculatorActvity,
+         btnRestExampleActivity;
 
     private void initComponents() {
         btnLinearLayoutActivity = (Button) findViewById(R.id.ma_btnLinearLayoutActivity);
@@ -97,6 +98,9 @@ public class MainActivity extends AppCompatActivity {
         btnPlanetListActivity = findViewById(R.id.ma_btnPlanetListActivity);
         btnIntentExampleActivity = findViewById(R.id.ma_btnIntentExampleActivity);
         btnUIControlsActvity = findViewById(R.id.ma_btnUIControlsActvity);
+        btnDnDExampleActvity = findViewById(R.id.ma_btnDnDExampleActvity);
+        btnCalculatorActvity = findViewById(R.id.ma_btnCalculatorActvity);
+        btnRestExampleActivity = findViewById(R.id.ma_btnRestExampleActivity);
     }
 
     private void registerEvents() {
@@ -246,6 +250,30 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getBaseContext(), UIContolsActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btnDnDExampleActvity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getBaseContext(), DnDExampleActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btnCalculatorActvity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getBaseContext(), CalculatorActivity.class);
+                startActivity(i);
+            }
+        });
+
+        btnRestExampleActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getBaseContext(), RestExampleActivity.class);
                 startActivity(i);
             }
         });

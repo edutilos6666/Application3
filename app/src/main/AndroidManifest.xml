@@ -3,6 +3,7 @@
     package="com.edutilos">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -182,6 +183,18 @@
         <activity
             android:name=".UIContolsActivity"
             android:label="@string/title_activity_uicontols"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DnDExampleActivity"
+            android:label="@string/title_activity_dn_dexample"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CalculatorActivity"
+            android:label="@string/title_activity_calculator"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RestExampleActivity"
+            android:label="@string/title_activity_rest_example"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

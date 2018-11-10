@@ -144,5 +144,30 @@
             android:layout_height="wrap_content"
             android:text="UIControlsActivity"
             />
+
+
+        <Button
+            android:id="@+id/ma_btnDnDExampleActvity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DnDExampleActivity"
+            />
+
+
+        <Button
+            android:id="@+id/ma_btnCalculatorActvity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CalculatorActivity"
+            />
+
+
+        <Button
+            android:id="@+id/ma_btnRestExampleActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RestExampleActivity"
+            />
+
     </LinearLayout>
 </ScrollView>
